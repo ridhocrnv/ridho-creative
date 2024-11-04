@@ -241,60 +241,58 @@ footer p {
 
   /* Main Content */
   main {
-    display: flex;
     flex-direction: column;
     padding: 1rem;
-    gap: 1rem;
-    max-width: 1200px;
-    width: 100%;
     text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  main .content .content-description {
+    padding: 0 1rem;
   }
 
   main .content .content-description .title {
     font-size: 2rem;
+    margin-block: 0.5rem;
   }
 
   main .content .content-description .title2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   main .content .content-description article {
     font-size: 0.9rem;
-    line-height: 1.5rem;
+    line-height: 1.5;
   }
 
-  main .content .content-description button {
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
+  main aside {
+    width: 100%;
+    margin-top: 2rem;
   }
 
   main aside .content-image {
     width: 100%;
-    text-align: center;
+    max-width: 250px;
+    margin: 0 auto;
   }
 
-  main aside .content-image img {
-    width: 100%;
-    max-width: 250px; /* Membatasi ukuran gambar */
-    height: auto;
-  }
-
-  /* Footer */
+  /* Footer Mobile Styles */
   .footer-container {
     flex-direction: column;
-    padding: 1rem;
     text-align: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto; /* Pusatkan footer */
+    gap: 2rem;
   }
 
   .footer-info,
   .footer-links,
-  .footer-social,
-  .footer-copyright {
-    margin: 10px 0; /* Spasi antar elemen di footer */
-    width: 100%; /* Membuat setiap elemen selebar footer */
+  .footer-social {
+    margin: 0;
+    width: 100%;
   }
 
   .footer-links ul,
@@ -302,13 +300,17 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
-    padding: 0;
-    list-style: none;
+    gap: 0.8rem;
   }
 
   .footer-links li,
   .footer-social li {
-    width: auto; /* Agar link dan icon berada di tengah */
+    margin-bottom: 0;
+  }
+
+  .footer-copyright {
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid #444;
   }
 }
