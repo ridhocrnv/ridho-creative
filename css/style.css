@@ -1,0 +1,241 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #172ef0;
+}
+
+header.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+header.nav-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.nav-container .logo img {
+  width: 75px;
+  max-width: 75%;
+}
+
+header.nav-container .nav-list li {
+  list-style-type: none;
+}
+
+header.nav-container .nav-list li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2 ease-in-out;
+  border-radius: 999px;
+}
+
+header.nav-container .nav-list li:hover a {
+  background-color: white;
+  color: #172ef0;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  padding: 1rem 3rem;
+  align-items: center;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+main .content .content-description {
+  flex: 1 1;
+}
+
+main .content .content-description .title {
+  margin-block: 0.7rem;
+  font-size: 3rem;
+  color: white;
+}
+
+main .content .content-description .title2 {
+  font-size: 1.8rem;
+  margin-top: 0.2rem;
+  color: white;
+  font-weight: 400;
+}
+
+main .content .content-description article {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  color: white;
+}
+
+main .content .content-description button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid white;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  background-color: #172ef0;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5 ease-in;
+}
+
+main .content .content-description button:hover {
+  border: 3px solid transparent;
+  background-color: white;
+  color: #172ef0;
+}
+main aside {
+  display: flex;
+  height: 100%;
+}
+
+main aside .content-image {
+  display: column;
+  width: 250px;
+  min-height: 200px;
+  margin: auto;
+}
+
+/* CSS untuk Footer */
+/* CSS untuk Footer */
+/* CSS untuk Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+}
+
+.footer-info,
+.footer-links,
+.footer-social,
+.footer-copyright {
+  flex: 1;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.footer-info h3,
+.footer-links h4,
+.footer-social h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-info p,
+.footer-links ul,
+.footer-social ul {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-links li,
+.footer-social li {
+  margin: 0;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 200;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #172ef0;
+}
+
+footer p {
+  font-size: 13px;
+  color: #aaa;
+  margin: 0;
+}
+
+/* Medium devices 768 px */
+@media screen and (max-width: 768px) {
+  header.nav-container {
+    flex-direction: flex;
+  }
+
+  header.nav-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.2rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main aside .content-image {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-info,
+  .footer-links,
+  .footer-social,
+  .footer-copyright {
+    margin: 10px 0;
+  }
+
+  .footer-links ul,
+  .footer-social ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
