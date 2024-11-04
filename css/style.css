@@ -200,29 +200,82 @@ footer p {
   margin: 0;
 }
 
-/* Medium devices 768 px */
-@media screen and (max-width: 768px) {
+/* Responsif untuk layar HP atau perangkat dengan lebar ≤ 480px */
+@media screen and (max-width: 480px) {
   header.nav-container {
-    flex-direction: flex;
+    flex-direction: row;
+    padding: 0.5rem 1rem;
+  }
+
+  header.nav-container .logo {
+    flex: 0 0 auto; /* Membuat logo tidak terlalu besar */
+  }
+
+  header.nav-container .nav-list {
+    flex: 1; /* Membuat navbar menyesuaikan ruang */
+    display: flex;
+    justify-content: flex-end; /* Posisikan menu di sebelah kanan logo */
   }
 
   header.nav-container .nav-list ul {
-    flex-wrap: wrap;
-    column-gap: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem; /* Jarak antar link */
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
   }
 
-  main .content {
+  header.nav-container .nav-list li {
+    display: inline; /* Agar item navigasi berada dalam satu baris */
+  }
+
+  header.nav-container .nav-list li a {
+    font-size: 0.9rem; /* Ukuran font lebih kecil agar pas di layar kecil */
+    padding: 0.5rem 1rem; /* Padding yang nyaman untuk diklik */
+  }
+
+  /* Main Content */
+  main {
     flex-direction: column;
-    gap: 2rem;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  main .content .content-description .title {
+    font-size: 2rem;
+  }
+
+  main .content .content-description .title2 {
+    font-size: 1.5rem;
+  }
+
+  main .content .content-description article {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  main .content .content-description button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
   }
 
   main aside .content-image {
-    flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
 
+  main aside .content-image img {
+    width: 100%;
+    max-width: 250px; /* Membatasi ukuran gambar */
+    height: auto;
+  }
+
+  /* Footer */
   .footer-container {
     flex-direction: column;
-    align-items: center;
+    padding: 10px;
     text-align: center;
   }
 
@@ -239,3 +292,4 @@ footer p {
     gap: 5px;
   }
 }
+
