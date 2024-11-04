@@ -6,12 +6,12 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-inline: hidden;
   background-color: #172ef0;
 }
 
