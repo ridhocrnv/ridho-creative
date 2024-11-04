@@ -4,12 +4,13 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   margin: 0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
   background-color: #172ef0;
 }
 
@@ -204,7 +205,8 @@ footer p {
 @media screen and (max-width: 480px) {
   header.nav-container {
     flex-direction: row;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
+    margin: 0;
   }
 
   header.nav-container .logo {
@@ -275,21 +277,32 @@ footer p {
   /* Footer */
   .footer-container {
     flex-direction: column;
-    padding: 10px;
+    padding: 1rem;
     text-align: center;
+    width: 100%;
+    margin: 0 auto; /* Pusatkan footer */
   }
 
   .footer-info,
   .footer-links,
   .footer-social,
   .footer-copyright {
-    margin: 10px 0;
+    margin: 10px 0; /* Spasi antar elemen di footer */
+    width: 100%; /* Membuat setiap elemen selebar footer */
   }
 
   .footer-links ul,
   .footer-social ul {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 5px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-links li,
+  .footer-social li {
+    width: auto; /* Agar link dan icon berada di tengah */
   }
 }
-
