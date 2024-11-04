@@ -18,7 +18,7 @@ body {
 header.nav-container {
   width: 100%;
   max-width: 1200px;
-  padding-block: 1rem;
+  padding-block: 0.8rem;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -30,7 +30,7 @@ header.nav-container .nav-list ul {
   padding-left: 0;
   display: flex;
   justify-content: center;
-  gap: 2rem 1rem;
+  gap: 1rem 1rem;
 }
 
 header.nav-container .logo img {
