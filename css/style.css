@@ -2,15 +2,16 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
-  margin: 0;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow-inline: hidden;
   background-color: #172ef0;
 }
 
