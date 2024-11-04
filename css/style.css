@@ -123,12 +123,11 @@ main aside {
 main aside .content-image {
   display: column;
   width: 250px;
-  min-height: 200px;
   margin: auto;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 /* CSS untuk Footer */
@@ -210,7 +209,7 @@ footer p {
 @media screen and (max-width: 768px) {
   header.nav-container {
     flex-direction: row;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0;
   }
 
@@ -250,13 +249,11 @@ footer p {
     margin-bottom: 2rem;
   }
 
-  main .content {
+  main {
     flex-direction: column;
-    width: 100%;
-  }
-
-  main .content .content-description {
-    padding: 0 1rem;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 
   main .content .content-description .title {
@@ -266,22 +263,22 @@ footer p {
 
   main .content .content-description .title2 {
     font-size: 1.3rem;
+    margin-block: 0.5rem;
   }
-
+ 
   main .content .content-description article {
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 0.8rem;
+    margin-block: 0.5rem;
+    text-align: center;
   }
-
   main aside {
     width: 100%;
     margin-top: 2rem;
   }
 
   main aside .content-image {
-    width: 100%;
-    max-width: 250px;
-    margin: 35px;
+    width: 80%;
+    margin: 0 auto;
   }
 
   /* Footer Mobile Styles */
