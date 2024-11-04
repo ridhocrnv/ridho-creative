@@ -203,7 +203,7 @@ footer p {
   margin: 0;
 }
 
-/* Responsif untuk layar HP atau perangkat dengan lebar ≤ 480px */
+/* Responsif untuk layar HP atau perangkat dengan lebar ≤ 768px */
 @media screen and (max-width: 768px) {
   header.nav-container {
     flex-direction: row;
@@ -241,7 +241,8 @@ footer p {
 
   /* Main Content */
   main {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     padding: 1rem;
     gap: 1rem;
     text-align: center;
