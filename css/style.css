@@ -207,7 +207,7 @@ footer p {
 @media screen and (max-width: 768px) {
   header.nav-container {
     flex-direction: row;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 0;
   }
 
